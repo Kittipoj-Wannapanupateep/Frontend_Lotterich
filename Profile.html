@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LotteRich - Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Layout_Login.css">
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Image/Lotterich_Logo2.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Login.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Collection_Login.html">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Overview_Login.html">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Statistics_Login.html">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home_Logout.html">Logout</a>
+                    </li>
+                </ul>
+                <a href="Profile.html" class="user-profile-link">
+                    <div class="user-profile-container">
+                        <div class="user-avatar">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="User Avatar">
+                        </div>
+                        <div class="user-info">
+                            <span class="username">Kittipoj</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background"></div>
+
+    <!-- Main Content Area -->
+    <main class="container-fluid p-0">
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-form">
+                    <div class="profile-image-container">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Profile Image" class="profile-image">
+                    </div>
+                    <h2>Profile</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Username</label>
+                            <div class="input-with-icon">
+                                <input type="text" value="Kittipoj" readonly id="usernameInput">
+                                <button type="button" class="edit-icon" id="editButton">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2985/2985043.png" alt="Edit" class="edit-icon-img">
+                                </button>
+                                <button type="button" class="save-icon" id="saveButton" style="display: none;">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/447/447147.png" alt="Save" class="save-icon-img">
+                                </button>
+                                <button type="button" class="cancel-icon" id="cancelButton" style="display: none;">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3641/3641192.png" alt="Cancel" class="cancel-icon-img">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" value="kittipoj@example.com" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Member Since</label>
+                            <input type="text" value="January 1, 2024" readonly>
+                        </div>
+                        <div class="profile-actions">
+                            <button type="button" class="change-password-button">Change Password</button>
+                            <button type="button" class="delete-account-button">Delete Account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2024 LotteRich. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="Profile.js"></script>
+</body>
+</html> 
